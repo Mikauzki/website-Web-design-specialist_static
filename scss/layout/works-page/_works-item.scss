@@ -1,0 +1,28 @@
+.works-page {
+  .works-page-wrap {
+    width:86%;
+    margin:0 auto;
+    margin-top: 70px;
+    .works-page-slider {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      @include M {
+        flex-direction: row;
+      }
+      .works-page-slider-item {
+        padding:15px 1%;
+        .works-page-slider-img {
+          border: 1px solid #CCCCCC;
+          width:100%;
+          height: auto;
+          @include M {
+            width:350px;
+            height:238px;
+          }
+        }
+      }
+    }
+  }
+}

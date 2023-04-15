@@ -1,0 +1,78 @@
+.news {
+  .news-wrap {
+    width: 71%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    @include L {
+      width: 917px;
+      flex-direction: row;
+    }
+    .news-title-cont {
+      text-align: center;
+      @include L {
+        text-align: left
+      }
+      .news-title {
+        @include title;
+      }
+      .sub-title {
+        @include sub;
+        padding-top: 5px;
+      }
+    }
+    .news-list {
+      @include L {
+        margin-left: 4%;
+      }
+      .news-item {
+        display: flex;
+        flex-direction: column;
+        @include L {
+          flex-direction: row;
+        }
+        :hover {
+          opacity: 0.5;
+          transition: 0.2s;
+        }
+        + .news-item {
+          padding-top: 25px;
+          @include L {
+            padding-top: 18px;
+          }
+        }
+        .news-date {
+          font-size: 1.5rem;
+          font-family: "Montserrat";
+        }
+        .news-type {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-top: 8px;
+          background: #e8e8e8;
+          width: 82px;
+          height: 22px;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include L {
+            margin:0;
+            margin-left: 20px;
+          }
+        }
+        .news-link {
+          font-size: 1.5rem;
+          line-height: 1.8;
+          font-family: "ヒラギノ角ゴシック";
+          margin-top: 8px;
+          @include L {
+            margin:0;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

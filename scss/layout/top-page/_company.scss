@@ -1,0 +1,64 @@
+.company {
+  .company-wrap {
+    margin-top: 60px;
+    padding-top: 80px;
+    text-align: center;
+    background: url(/img/sp_bg-circle.png);
+    background-repeat: repeat;
+    background-size: contain;
+    .company-title {
+      @include title;
+    }
+    .sub-title {
+      @include sub;
+      padding-top: 5px;
+    }
+    .company-cont {
+      margin:0 auto;
+      font-family: "ヒラギノ角ゴシック";
+      @include M {
+        background: url(/img/bg-face.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      :hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+      .company-gole {
+        margin:0 auto;
+        margin-top: 40px;
+        font-size: 4rem;
+        font-weight: bold;
+        width:60%;
+        @include M {
+          background:linear-gradient(transparent 70%, #F5F534 0%);
+        }
+        br {
+          display: block;
+          @include M {
+            display: none;
+          }
+        }
+      }
+      .company-text {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        padding-top: 46px;
+        pointer-events: none;
+        @include S {
+          font-size: 1.5rem;
+        }
+      }
+      .more {
+        margin-top: 30px;
+        margin-bottom: 73px;
+        a {
+          margin: 0 auto;
+          @include btn;
+        }
+      }
+    }
+  }
+}

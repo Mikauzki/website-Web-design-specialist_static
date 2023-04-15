@@ -1,0 +1,130 @@
+.company-page {
+  .company-page-wrap {
+    width:90%;
+    margin:0 auto;
+    margin-top: 30px;
+    background: url(/img/sp_bg-circle.png);
+    background-repeat: repeat;
+    background-size: contain;
+    .company-page-title {
+      @include title;
+      font-size: 3.2rem;
+      text-align: center;
+    }
+    .company-page-cont {
+      text-align: center;
+      margin:0 auto;
+      font-family: "ヒラギノ角ゴシック";
+      @include M {
+        background: url(/img/bg-face.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      :hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+      .company-page-gole {
+        margin:0 auto;
+        margin-top: 31px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        // width:60%;
+        @include M {
+          font-size: 4rem;
+        }
+        br {
+          display: block;
+          @include M {
+            display: none;
+          }
+        }
+      }
+      .company-page-text {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        padding-top: 37px;
+        pointer-events: none;
+        @include S {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .company-page-inner {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 56px;
+      @include M {
+        flex-direction: row-reverse;
+      }
+      .company-page-inner-img {
+        display: block;
+        margin-left: 2%;
+        @include S {
+          width:445px;
+          height:330px;
+        }
+      }
+      .company-page-inner-text {
+        margin-left: 3%;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        font-family: 'ヒラギノ角ゴシック';
+        padding-top: 30px;
+        @include M {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .company-overview {
+    .company-overview-wrap {
+      width:75%;
+      margin:0 auto;
+      margin-top: 140px;
+      .company-page-title {
+        @include title;
+        font-size: 3.2rem;
+        text-align: center;
+      }
+      .company-overview-cont {
+        margin-top: 60px;
+        .table {
+          width:100%;
+          tr {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 28.5px;
+            border-bottom: 1px solid #DDD;
+            @include S {
+              flex-direction: row;
+            }
+            +tr {
+              padding-top: 30.5px;
+            }
+            th {
+              display: block;
+              font-size: 1.5rem;
+              font-family: 'ヒラギノ角ゴシック';
+              width:150px;
+            }
+            td {
+              display: block;
+              font-size: 1.5rem;
+              font-family: 'Montserrat';
+              padding-top: 10px;
+              @include S {
+                padding:0;
+              }
+            }
+          }
+        }
+        .map {
+          margin-top: 60px;
+          width:100%;
+        }
+      }
+    }
+  }
+}

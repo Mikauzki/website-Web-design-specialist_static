@@ -1,0 +1,87 @@
+.news-wrap {
+  width: 71%;
+  margin: 0 auto;
+  margin-top: 60px;
+  flex-direction: column;
+  @include M {
+    flex-direction: row;
+  }
+  .news-list {
+    @include M {
+      margin-left: 4%;
+    }
+    .news-item {
+      display: flex;
+      flex-direction: column;
+      @include M {
+        flex-direction: row;
+      }
+      :hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+      + .news-item {
+        padding-top: 25px;
+        @include M {
+          padding-top: 18px;
+        }
+      }
+      .news-date {
+        font-size: 1.5rem;
+        font-family: "Montserrat";
+      }
+      .news-type {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 8px;
+        background: #e8e8e8;
+        width: 82px;
+        height: 22px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include M {
+          margin:0;
+          margin-left: 20px;
+        }
+      }
+      .news-link {
+        flex: 1;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        font-family: "ヒラギノ角ゴシック";
+        @include M {
+          margin:0;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .pagination {
+    .pagination-wrap {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      :hover {
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+      .pagination-link {
+        width:45px;
+        height:45px;
+        border-radius: 45px;
+        font-size: 2.0rem;
+        font-weight: bold;
+        color:  #fff;
+        background:  linear-gradient(#7633a4 0%, #250d65 100%);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        +.pagination-link {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

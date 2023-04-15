@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scss/reset.css">
+  <link rel="stylesheet" href="/scss/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <title>WEB DESIGN SPECIALIST</title>
+</head>
+<body class="bottom-page">
+  <div class="header-top-wrap">
+    <header class="header">
+      <div class="header-wrap">
+        <h1><a href="/"><img class="header-logo" src="/img/logo.svg" alt="会社のロゴです"></a></h1>
+        <div class="header-right">
+          <nav id="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="/news-archive.html">news</a></li>
+            <li class="nav-item"><a href="/service.html">service</a></li>
+            <li class="nav-item"><a href="/works.html">works</a></li>
+            <li class="nav-item"><a href="/company.html">company</a></li>
+            <li class="nav-item"><a href="/recruit.html">rectuit</a></li>
+            <li class="nav-item"><a href="/contact.html">contact</a></li>
+            </ul><!-- /.nav-list -->
+          </nav><!-- /.nav -->
+          <button id="btn">
+            <span></span><span></span><span></span>
+          </button><!-- /.btn -->
+        </div><!-- /.header-right -->
+      </div><!-- /.header-wrap -->
+    </header><!-- /.header -->
+    <div class="modal">
+      <div class="modal-wrap">
+        <nav id="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/news-archive.html">news</a></li>
+            <li class="nav-item"><a href="/service.html">service</a></li>
+            <li class="nav-item"><a href="/works.html">works</a></li>
+            <li class="nav-item"><a href="/company.html">company</a></li>
+            <li class="nav-item"><a href="/recruit.html">rectuit</a></li>
+            <li class="nav-item"><a href="/contact.html">contact</a></li>
+          </ul><!-- /.nav-list -->
+        </nav><!-- /.nav -->
+      </div><!-- /.modal-wrap -->
+    </div><!-- /.modal -->
+    <div class="top">
+      <div class="top-wrap">
+        <div class="top-cont">
+          <h2 class="top-title">contact</h2>
+          <h3 class="top-sub">お問い合わせ</h3>
+        </div><!-- /.top-cont -->
+      </div><!-- /.top-wrap -->
+    </div><!-- /.top -->
+  </div><!-- /.header-top-wrap -->
+  <div class="bread">
+    <div class="bread-wrap">
+      <p class="bread-page">HOME  >  CONTACT</p>
+    </div><!-- /.bread-wrap -->
+  </div><!-- /.bread -->
+  <main class="main">
+    <section class="contact-form">
+      <p class="contact-form-text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+      <div class="contact-form-wrap">
+        <div class="contact-form-cont">
+          <form class="form">
+            <div class="form-parts">
+                <label for="contact">お問い合わせ種別<span class="mandatory">*必須</span></label>
+                <div class="radio-cont">
+                  <div class="radio-cont-inner">
+                    <input class="radio-btn" type="radio" id="contact" name="contact" value="お仕事のご依頼・ご相談">
+                    <label class="radio-text" for="お仕事のご依頼・ご相談">お仕事のご依頼・ご相談</label>
+                  </div>
+                  <div class="radio-cont-inner">
+                    <input class="radio-btn" type="radio" id="contact" name="contact" value="お見積りのご依頼">
+                    <label class="radio-text" for="お見積りのご依頼">お見積りのご依頼</label>
+                  </div>
+                  <div class="radio-cont-inner">
+                    <input class="radio-btn" type="radio" id="contact" name="contact" value="採用について">
+                    <label class="radio-text" for="採用について">採用について</label>
+                  </div>
+                  <div class="radio-cont-inner">
+                    <input class="radio-btn" type="radio" id="contact" name="contact" value="その他">
+                    <label class="radio-text" for="その他">その他</label>
+                  </div>
+                </div> <!-- /.radio-cont -->
+            </div><!-- /.form-parts -->
+            <div class="form-parts">
+                <label class="form-label" for="name">名前<span class="mandatory">*必須</span></label>
+                <input class="form-text" type="text" id="name" name="name">
+            </div>
+            <div class="form-parts">
+                <label class="form-label" for="company-name">会社名</label>
+                <input class="form-text" type="text" id="company-name" name="company-name">
+            </div>
+            <div class="form-parts">
+                <label class="form-label" for="email">メールアドレス<span class="mandatory">*必須</span></label>
+                <input class="form-text" type="mail" id="email" name="email">
+            </div>
+            <div class="form-parts">
+                <label class="form-label" for="tel">お電話番号<span class="tel-explanation">（半角数字ハイフンなし）</span></label>
+                <input class="form-text" type="tel" id="tel" name="tel">
+            </div>
+            <div class="form-parts">
+              <label class="form-label" for="content">お問い合わせ内容<span class="mandatory">*必須</span></label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-parts">
+              <label class="form-label" for="select">PON DESIGNをどちらでお知りになりましたか？<span class="mandatory">*必須</span></label>
+              <select name="select" class="select">
+                <option class="select-item" value="">選択してください</option>
+                <option class="select-item" value="Google/Yahoo検索">Google/Yahoo検索</option>
+                <option class="select-item" value="SNS">SNS</option>
+                <option class="select-item" value="ブログ">ブログ</option>
+                <option class="select-item" value="友人や知人">友人や知人</option>
+                <option class="select-item" value="その他">その他</option>
+                </select>
+            </div>
+            <input class="send" type="button"  value="送信する">
+        </form>
+        </div><!-- /.contact-form-cont -->
+      </div><!-- /.contact-form-wrap -->
+    </section><!-- /.contact-form -->
+  </main><!-- /.main -->
+  <footer class="footer">
+    <div class="footer-wrap">
+      <nav id="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">home</a></li>
+          <li class="nav-item"><a href="/news-archive.html">news</a></li>
+            <li class="nav-item"><a href="/service.html">service</a></li>
+            <li class="nav-item"><a href="/works.html">works</a></li>
+            <li class="nav-item"><a href="/company.html">company</a></li>
+            <li class="nav-item"><a href="/recruit.html">recruit</a></li>
+            <li class="nav-item"><a href="/contact.html">contact</a></li>
+        </ul><!-- /.nav-list -->
+      </nav><!-- /.nav -->
+      <p class="copy-right">&copy;PON DESIGN</p>
+    </div><!-- /.footer-wrap -->
+  </footer><!-- /.footer -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.footer {
+  .footer-wrap {
+    background:cl(back-b);
+    #nav {
+      color:#fff;
+      padding:0 10%;
+      .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px;
+        :hover {
+          opacity: 0.7;
+          transition: 0.2s;
+
+        }
+        .nav-item {
+          padding:10px 0;
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          +.nav-item {
+            padding-left: 25px;
+          }
+          a {
+
+          }
+        }
+      }
+    }
+    .copy-right {
+      padding: 12px 0 60px;
+      color:#A798B7;
+      text-align: center;
+    }
+  }
+}

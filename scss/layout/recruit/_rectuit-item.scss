@@ -1,0 +1,141 @@
+.rectuit-page {
+  .rectuit-page-wrap {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    @include S {
+      margin-top: 116px;
+    }
+    .rectuit-page-title {
+      @include title;
+      font-size: 4.8rem;
+      text-transform: capitalize;
+      @include L {
+        font-size: 7.2rem;
+      }
+    }
+    .sub-title {
+      @include sub;
+      font-weight: normal;
+      font-size: 1.8rem;
+      padding-top: 15px;
+      @include S {
+        font-size: 3.2rem;
+      }
+    }
+    .rectuit-page-text {
+      margin: 0 auto;
+      font-size: 1.6rem;
+      line-height: 1.8;
+      font-family: "ヒラギノ角ゴシック";
+      padding-top: 25px;
+      @include S {
+        padding-top: 40px;
+      }
+    }
+  }
+  .recruit-page-img {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    transform:skewY(-5deg);
+  }
+}
+.recruit-job {
+  .recruit-job-wrap {
+    .recruit-job-title {
+      @include title;
+      font-size: 3.2rem;
+      text-align: center;
+      margin-top: 70px;
+    }
+    .recruit-job-cont {
+      width: 75%;
+      margin: 40px auto 0;
+      border: 1px solid #b8aed5;
+      .recruit-job-name {
+        font-size: 2.4rem;
+        font-weight: bold;
+        font-family: "Montserrat";
+        text-align: center;
+        padding-top: 60px;
+      }
+      .table {
+        width: 100%;
+        padding: 0 10%;
+        padding-top: 48px;
+        tr {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 28.5px;
+          border-bottom: 1px solid #ddd;
+          @include S {
+            flex-direction: row;
+          }
+          + tr {
+            padding-top: 30.5px;
+          }
+          th {
+            display: block;
+            font-size: 1.5rem;
+            font-family: "ヒラギノ角ゴシック";
+            width: 150px;
+          }
+          td {
+            display: block;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            font-family: "Montserrat";
+            padding-top: 10px;
+            @include S {
+              padding: 0;
+            }
+            .skill-list {
+              margin-top: 10px;
+              list-style: disc;
+              .skill-item {
+                margin-left: 5%;
+                @include S {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .application {
+        margin: 50px auto 0;
+        :hover {
+          opacity: 0.7;
+          transition: 0.2s;
+        }
+        a {
+          margin: 0 auto;
+          @include btn;
+        }
+      }
+    }
+    .application-text {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      padding-bottom: 60px;
+    }
+  }
+}
+.company-movie {
+  width:75%;
+  margin:0 auto;
+  padding-top: 140px;
+  .company-movie-title {
+    @include title;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .movie {
+    width:100%;
+    margin-top: 40px;
+  }
+}

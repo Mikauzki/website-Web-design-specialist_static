@@ -1,0 +1,31 @@
+.contact {
+  .contact-wrap {
+    margin-top: 100px;
+    padding: 80px;
+    background: #F7F7F7;
+    text-align: center;
+    .contact-title {
+      @include title;
+    }
+    .sub-title {
+      @include sub;
+      padding-top: 5px;
+    }
+    .contact-text {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      font-family: 'ヒラギノ角ゴシック';
+      padding:35px 0 30px;
+    }
+    .more {
+      :hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+      a {
+        margin:0 auto;
+        @include btn;
+      }
+    }
+  }
+}

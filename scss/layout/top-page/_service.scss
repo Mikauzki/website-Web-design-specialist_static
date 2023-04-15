@@ -1,0 +1,66 @@
+.service {
+  .service-wrap {
+    width:75%;
+    margin:0 auto;
+    margin-top: 140px;
+    .service-title {
+      @include title;
+      text-align: center;
+    }
+    .sub-title {
+      @include sub;
+      padding-top: 5px;
+      text-align: center;
+    }
+    .service-list {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include M {
+        flex-direction: row;
+      }
+      .service-item {
+        display: flex;
+        flex-direction: column-reverse;
+        +.service-item {
+          margin-top: 40px;
+          @include M {
+            margin-left: 2%;
+          }
+        }
+        .service-item-inner {
+          .service-item-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            padding:24px 0 17px;
+            text-align: center;
+          }
+          .service-item-text {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            font-family: 'ヒラギノ角ゴシック';
+          }
+        }
+        .service-img {
+          // width:350px;
+          // height:220px;
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+    .more {
+      margin-top: 30px;
+      :hover {
+        opacity: 0.7;
+        transition: 0.2s;
+      }
+      a {
+        @include btn;
+        margin:0 auto;
+      }
+    }
+  }
+}
